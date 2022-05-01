@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="troca.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Provi Hackathon</title>
+</head>
+
+<body>
+    <h1>Hello Hacka</h1>
+    <h1>Hello</h1>
+
+<div>
+    <input type="text" id="barra" value="valdery">
+    <button id="pesquisa" onclick="troca()"> pesquisar </button>
+
+</div>
+
+<div id="resultados" style="display: none">
+    <div>
+        <h3>oi</h3> 
+    </div>
+    <div>
+        <h3>
+            2
+
+        </h3>
+    </div>
+    <div>
+        <h3>3
+
+        </h3>
+    </div>
+
+</div>
+
+<!--JAVASCRIPT-->
+<script async>
+
+const btn = document.querySelector("#pesquisa");
+
+btn.addEventListener("click,", function(e){
+    e.preventDefault();
+}) 
+    
+ async function troca(){
+    const response = await buscarProdutos();
+    const produtos = response.data; //aqui é que lista o buscarprodutos
+   // console.log(produtos);
+    const resultados = document.getElementById("resultados");
+    resultados.style.display = "block";
+    return produtos;
+}
+
+
+async function buscarProdutos() {
+    const api = axios.create({
+        baseURL: 'https://backend54.herokuapp.com',
+    })
+    const listaProdutos = await api.get('/produtos');
+    return listaProdutos;
+}
+
+async function main(){
+    const response = await buscarProdutos();
+    const produtos = response.data; //aqui é que lista o buscarprodutos - minha array
+    console.log(produtos);
+    function filtrandoProduto(){
+        const produtoPesquisado = document.querySelector("#barra");
+        const valor = barra.value;
+        return valor;}
+    
+    const filtrado = produtos.filter(filtrandoProduto);
+    console.log(filtrado);
+}
+
+//problemas: não espera escrever algo no input para realizar a função; achar o nome dentro do array de arrays
+
+
+main();
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
