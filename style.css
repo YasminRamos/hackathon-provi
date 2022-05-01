@@ -139,3 +139,22 @@ footer{
   padding-left: 10px;
   padding-right: 1px;
 }
+
+@media only screen and (max-width: 987px){
+  .navbar-brand{
+      padding-left: 0px;
+  }
+
+  .footer{ 
+    padding: 0px 0px 0px 0px;
+    max-width: fit-content;
+  }
+
+  #imagemfinal{
+    padding: 30px 20px;
+    margin : auto;
+    margin-left: 10px;
+    border-radius: 50px;
+    max-width: 300px;
+  }
+}
