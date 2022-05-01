@@ -63,13 +63,24 @@ form {
     margin : 5px;
 
   }
-
+main{
+  width: fit-content;
+  margin: auto;
+}
   .first-box {
     width: 200px; 
     float:left; 
     height: 150px;
     margin: 50px 80px 60px 190px;
     padding: auto;
+    text-align: justify;
+  }
+
+  #first-box-debaixo{
+    width: 22%;
+    height: 30%;
+    text-align: justify;
+    line-height: 10px;
   }
   
   .second-box {
