@@ -140,11 +140,49 @@ footer{
   padding-right: 1px;
 }
 
+
+
 @media only screen and (max-width: 987px){
   .navbar-brand{
       padding-left: 0px;
   }
 
+  .main {
+    padding: 50px;
+    flex-direction: column;
+    max-width: 10px;
+    text-align: match-parent;
+    margin : 50px;
+  }
+ .container{
+   max-width: fit-content;
+   padding: 10px;
+   flex-direction: column;
+ }
+ .first-box{
+   text-align: center;
+   max-width: 200px;
+   max-height: 300px;
+   flex-direction: column;
+   margin: 0px 40px;
+   line-height: 120%;
+   justify-content: space-around;
+ }
+ .second-box{
+  text-align: center;
+  max-width: 200px;
+  max-height: 300px;
+  padding: 150px 200px;
+  flex-direction: column;
+  margin: 150px;
+  line-height: 120%;
+  justify-content: space-around;
+ }
+ .figura{
+   flex-direction: column-reverse;
+   padding: 0px;
+   margin: auto;
+ }
   .footer{ 
     padding: 0px 0px 0px 0px;
     max-width: fit-content;
