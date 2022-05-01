@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="static/css/main.css">
+  <title>Home/Higiene pessoal/Escova de dente de bambu</title>
+      <ul>
+        
+      </ul>
+    </nav>
+  </header>
+
+  
+    </header>
+
+    <section>
+      <form>
+        
+
+        <div class="field">
+          <label for="produto">Produzido com material biodegrádavel</label>
+          <label for="produto">Sem PVC</label>
+          <label for="produto">Produto nacional</label>
+          <label for="produto">Embalagens biodegradável</label>
+          <label for="produto">Produto com selo verde</label>
+          <label for="produto">Livre de crueldade animal</label>
+        </div>
+
+  <footer>    
+      <span>Recomendações
+        Material excelente. É um processo de adptação, gostei bastante.
+        Só achei que faz consumir mais sabão.
+        -- Amanda Farias, 2021
+      </span>
+    </div>
+
+      <nav>
+        <ul>
+          
+        </ul>
+      </nav>
+   
+      <div class="column sm disclaimer">
+        <img src="static/img/logo-" alt="">  
+        </ul>
+      </nav>
+    
+  </footer>
+</body>
+</html>
