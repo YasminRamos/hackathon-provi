@@ -1,0 +1,79 @@
+body {
+    font-family: 'BIZ UDMincho', serif;
+}
+
+h5{
+    
+    text-align: match-parent;
+    padding-left: 438px;
+}
+#divcupom{
+    background-color: #BAD9AC;
+    padding : 10px 10px 6px 10px;
+}
+
+form {
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    padding: 10px 10px 10px 60px;
+    margin : auto;
+  }
+  
+  input {
+    all: unset;
+    font: 16px;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 25px;
+    border : 1px solid #6AA84F;
+    
+  }
+  
+  ::placeholder {
+    color: #bad9ac;
+    opacity: 0.7; 
+    
+  }
+  
+  svg {
+    color: #fff;
+    fill:  currentColor;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+  
+#botaobusca{
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    background-color : #bad9ac;
+    border-radius :  10px 35px 15px 35px;
+    transform : rotate(90deg);
+    margin : 5px;
+
+  }
+
+  .first-box {
+    width: 200px; 
+    float:left; 
+    height: 150px;
+    margin: 50px 80px 60px 190px;
+    padding: auto;
+  }
+  
+  .second-box {
+    width: 500px; 
+    height: 150px; 
+    padding: auto;
+    float:right; 
+    text-align: justify;
+    margin: 50px;
+  }
