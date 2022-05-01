@@ -1,5 +1,6 @@
 body {
     font-family: 'BIZ UDMincho', serif;
+    background-color: #E5E5E5;
 }
 
 h5{
@@ -77,3 +78,48 @@ form {
     text-align: justify;
     margin: 50px;
   }
+#opcoes{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.opcao{
+
+  text-decoration: none;
+  color: #384F08;
+  background-color: #EAECDB;
+  padding: 5px 15px 5px 15px;
+  border-radius: 1em;
+
+}
+
+#box-resultados{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.card{
+background-color: white;
+box-shadow: rgba(32, 31, 31, 0.521);
+border-radius: 5px 5px 5px;
+max-width: 20%;
+margin: 10%;
+text-align: center;
+align-items: center;
+   
+}
+
+.card img{
+  width: 100px;
+}
+
