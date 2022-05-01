@@ -15,7 +15,7 @@
     <h1>Hello</h1>
 
 <div>
-    <input type="text" id="barra de pesquisa">
+    <input type="text" id="barra" value="valdery">
     <button id="pesquisa" onclick="troca()"> pesquisar </button>
 
 </div>
@@ -38,6 +38,57 @@
 
 </div>
 
+<!--JAVASCRIPT-->
+<script async>
+
+const btn = document.querySelector("#pesquisa");
+
+btn.addEventListener("click,", function(e){
+    e.preventDefault();
+}) 
+    
+ async function troca(){
+    const response = await buscarProdutos();
+    const produtos = response.data; //aqui é que lista o buscarprodutos
+   // console.log(produtos);
+    const resultados = document.getElementById("resultados");
+    resultados.style.display = "block";
+    return produtos;
+}
+
+
+async function buscarProdutos() {
+    const api = axios.create({
+        baseURL: 'https://backend54.herokuapp.com',
+    })
+    const listaProdutos = await api.get('/produtos');
+    return listaProdutos;
+}
+
+async function main(){
+    const response = await buscarProdutos();
+    const produtos = response.data; //aqui é que lista o buscarprodutos - minha array
+    console.log(produtos);
+    function filtrandoProduto(){
+        const produtoPesquisado = document.querySelector("#barra");
+        const valor = barra.value;
+        return valor;}
+    
+    const filtrado = produtos.filter(filtrandoProduto);
+    console.log(filtrado);
+}
+
+//problemas: não espera escrever algo no input para realizar a função; achar o nome dentro do array de arrays
+
+
+main();
+
+
+
+
+
+
+</script>
 
 </body>
 
