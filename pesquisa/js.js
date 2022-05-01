@@ -2,10 +2,15 @@ const btn = document.querySelector('button')
 const divElemento = document.querySelector('div')
 const input = document.querySelector('input')
 
+function esconde(){
+    const pagHome = document.getElementById("pagHome");
+    pagHome.style.display = "none";
+}
 
 btn.addEventListener('click', (e) => {
     const nome = input.value
     acessaApi(nome)
+    esconde();
 })
 
 async function acessaApi(nome) {

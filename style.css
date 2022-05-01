@@ -142,7 +142,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   clear: both;
-  width: 100vw;
+  
 }
 
 #cards ul{
@@ -154,7 +154,7 @@ footer{
   border-color: black;
   display: flex;
   white-space: nowrap;
-  flex-direction: column;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
@@ -171,10 +171,9 @@ footer{
 }
 
 #cards li img{
- width: 114px;
- height: 114px;
+ width: 250px;
+ height: 250px;
  object-fit: contain;
- float: left;
  
 }
 
