@@ -1,6 +1,7 @@
 body {
     font-family: 'BIZ UDMincho', serif;
     background-color: #E5E5E5;
+    overflow: overlay;
 }
 
 h5{
@@ -123,3 +124,14 @@ align-items: center;
   width: 100px;
 }
 
+footer{
+  background-color: #544441 !important;
+  width: 100%;
+}
+
+#imagemfinal {
+  background-color: #EAECDB !important;
+  margin-left: 39%;
+  padding-left: 10px;
+  padding-right: 1px;
+}
