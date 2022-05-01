@@ -74,8 +74,10 @@ main{
     margin: 50px 80px 60px 190px;
     padding: auto;
     text-align: justify;
+   
   }
 
+ 
   #first-box-debaixo{
     width: 22%;
     height: 30%;
@@ -90,7 +92,19 @@ main{
     float:right; 
     text-align: justify;
     margin: 50px;
+  
   }
+ 
+  .figura{
+    opacity: 60%;
+    border-radius: 25px;
+  }
+ 
+  .figura:hover{
+    opacity:100%;
+    transition:opacity 2s;
+  }
+
   p{
     line-height: 180%;
   }
