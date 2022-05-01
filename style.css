@@ -6,8 +6,9 @@ body {
 
 h5{
     
-    text-align: match-parent;
-    padding-left: 438px;
+    text-align: match-parent !important;
+    padding-left: 300px;
+    margin-right: 300px;
 }
 #divcupom{
     background-color: #BAD9AC;
@@ -78,6 +79,9 @@ form {
     float:right; 
     text-align: justify;
     margin: 50px;
+  }
+  p{
+    line-height: 180%;
   }
 #opcoes{
   display: flex;
