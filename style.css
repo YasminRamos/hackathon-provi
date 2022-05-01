@@ -113,7 +113,7 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 5px;
+  gap: 3px;
 }
 
 .card{
@@ -121,14 +121,24 @@ background-color: white;
 box-shadow: rgba(32, 31, 31, 0.521);
 border-radius: 5px 5px 5px;
 max-width: 20%;
-margin: 10%;
-text-align: center;
-align-items: center;
-   
+margin: 15px 30px 40px 60px;
+text-align: justify;
+line-height: 22px;
+padding: 10px 25px 15px 10px;
+align-items: center; 
+transition: all .2s ease-in-out;  
+}
+
+.card:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
 
 .card img{
   width: 100px;
+  padding : 5px 5px 5px 5px;
 }
 
 footer{
