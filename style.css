@@ -1,6 +1,6 @@
 body {
     font-family: 'BIZ UDMincho', serif;
-    background-color: #E5E5E5;
+    background-color: #F3F4F9;
 }
 
 h5{
@@ -94,33 +94,12 @@ form {
 
 }
 
-#box-resultados{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
 
 .cards{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 5px;
-}
-
-.card{
-background-color: white;
-box-shadow: rgba(32, 31, 31, 0.521);
-border-radius: 5px 5px 5px;
-max-width: 20%;
-margin: 10%;
-text-align: center;
-align-items: center;
-   
-}
-
-.card img{
-  width: 100px;
 }
 
 /*depois tiro essas formatações da busca*/
@@ -152,3 +131,113 @@ footer{
   padding-left: 10px;
   padding-right: 1px;
 }
+
+#box-resultados{
+  clear: both;
+}
+
+#cards{
+  gap: 5%;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  clear: both;
+  width: 100vw;
+}
+
+#cards ul{
+  text-decoration: none;
+  list-style-type: none;
+  gap: 8px;
+  box-shadow: rgba(32, 31, 31, 0.521);
+  border-radius: 5px 5px 5px;
+  border-color: black;
+  display: flex;
+  white-space: nowrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+#cards li{
+  list-style-type: none;
+  background-color: #EEE;   
+  text-align: center;
+  display: block;
+  text-align: justify;
+  margin: 0;
+  padding: 24px;
+    
+}
+
+#cards li img{
+ width: 114px;
+ height: 114px;
+ object-fit: contain;
+ float: left;
+ 
+}
+
+ul{
+  border-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@media (max-width<600px) {
+  #box-resultados{
+    clear: both;
+  }
+  
+  #cards{
+    gap: 5%;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    clear: both;
+    width: 100vw;
+  }
+  
+  #cards ul{
+    text-decoration: none;
+    list-style-type: none;
+    gap: 8px;
+    box-shadow: rgba(32, 31, 31, 0.521);
+    border-radius: 5px 5px 5px;
+    border-color: black;
+    display: flex;
+    white-space: nowrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #cards li{
+    list-style-type: none;
+    background-color: #EEE;   
+    text-align: center;
+    display: block;
+    text-align: justify;
+    margin: 0;
+    padding: 24px;
+      
+  }
+  
+  #cards li img{
+   width: 114px;
+   height: 114px;
+   object-fit: contain;
+   float: left;
+   
+  }
+  
+  ul{
+    border-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+}
+

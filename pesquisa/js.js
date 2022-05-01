@@ -52,6 +52,7 @@ async function criaElemento(produtos) {
         ul.appendChild(item)
     })
 
+  
     divResultados.appendChild(ul)
 }
 
