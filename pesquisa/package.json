@@ -1,0 +1,24 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "main": "troca.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasminRamos/hackathon-provi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YasminRamos/hackathon-provi/issues"
+  },
+  "homepage": "https://github.com/YasminRamos/hackathon-provi#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.1",
+    "jsdom": "^19.0.0"
+  }
+}
