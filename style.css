@@ -17,7 +17,7 @@ h5 {
 }
 
 form {
-  background-color: #fff;
+  background-color: transparent;
   width: 50%;
   height: 50%;
   border-radius: 5px;
@@ -36,7 +36,7 @@ input {
   padding: 6px 10px;
   border-radius: 25px;
   border: 1px solid #6AA84F;
-
+  color : #fff;
 }
 
 ::placeholder {
