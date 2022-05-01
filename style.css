@@ -1,6 +1,6 @@
 body {
   font-family: 'BIZ UDMincho', serif;
-  background-color: #F3F4F9;
+  background-color: #F3F4F9 !important;
   overflow: overlay;
 }
 
