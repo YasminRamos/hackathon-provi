@@ -1,16 +1,12 @@
 body {
-
   font-family: 'BIZ UDMincho', serif;
-  background-color: #F3F4F9 !important;
-  overflow: overlay;
-
+  background-color: #F3F4F9;
 }
 
 h5 {
 
-  text-align: match-parent !important;
-  padding-left: 300px;
-  margin-right: 300px;
+  text-align: match-parent;
+  padding-left: 438px;
 }
 
 #divcupom {
@@ -19,7 +15,7 @@ h5 {
 }
 
 form {
-  background-color: transparent;
+  background-color: #fff;
   width: 50%;
   height: 50%;
   border-radius: 5px;
@@ -38,7 +34,7 @@ input {
   padding: 6px 10px;
   border-radius: 25px;
   border: 1px solid #6AA84F;
-  color : #fff;
+
 }
 
 ::placeholder {
@@ -67,27 +63,12 @@ svg {
 
 }
 
-main {
-  width: fit-content;
-  margin: auto;
-}
-
 .first-box {
   width: 200px;
   float: left;
   height: 150px;
   margin: 50px 80px 60px 190px;
   padding: auto;
-  text-align: justify;
-
-}
-
-
-#first-box-debaixo {
-  width: 22%;
-  height: 30%;
-  text-align: justify;
-  line-height: 10px;
 }
 
 .second-box {
@@ -97,30 +78,12 @@ main {
   float: right;
   text-align: justify;
   margin: 50px;
-
-}
-
-.figura {
-  opacity: 69%;
-  border-radius: 25px;
-}
-
-.figura:hover {
-  opacity: 100%;
-  transition: opacity 2s;
-}
-
-p {
-  line-height: 180%;
 }
 
 #opcoes {
   display: flex;
   text-align: center;
   justify-content: space-around;
-  width: 10%;
-  margin-left: 45%;
-
 }
 
 .opcao {
@@ -130,36 +93,16 @@ p {
   background-color: #EAECDB;
   padding: 5px 15px 5px 15px;
   border-radius: 1em;
-  margin: 5px;
+
 }
-
-
-#box-resultados {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
 
 .cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 3px;
+  gap: 5px;
 }
-
-.card {
-  background-color: white;
-  box-shadow: rgba(32, 31, 31, 0.521);
-  border-radius: 5px 5px 5px;
-  max-width: 20%;
-  margin: 15px 30px 40px 60px;
-  text-align: justify;
-  line-height: 22px;
-  padding: 10px 25px 15px 10px;
-  align-items: center;
-  transition: all .2s ease-in-out;
-}
-
 
 /*depois tiro essas formatações da busca*/
 .titulo {
@@ -177,9 +120,10 @@ p {
 .card-img {
   max-width: 200px;
   display: block;
+  cursor: pointer;
 }
 
-footer{
+footer {
   background-color: #544441 !important;
   width: 100%;
 }
@@ -191,20 +135,20 @@ footer{
   padding-right: 1px;
 }
 
-#box-resultados{
+#box-resultados {
   clear: both;
 }
 
-#cards{
+#cards {
   gap: 5%;
   display: block;
   justify-content: space-between;
   align-items: center;
   clear: both;
-  
+  width: 100vw;
 }
 
-#cards ul{
+#cards ul {
   text-decoration: none;
   list-style-type: none;
   gap: 8px;
@@ -213,43 +157,52 @@ footer{
   border-color: black;
   display: flex;
   white-space: nowrap;
-  justify-content: space-around;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
 
-#cards li{
+#cards li {
   list-style-type: none;
-  background-color: #EEE;   
+  background-color: #EEE;
   text-align: center;
   display: block;
   text-align: justify;
   margin: 0;
   padding: 24px;
-    
+
 }
 
-#cards li img{
- width: 250px;
- height: 250px;
- object-fit: contain;
- 
+#cards li img {
+  width: 114px;
+  height: 114px;
+  object-fit: contain;
+  float: left;
+
 }
 
-ul{
+ul {
   border-color: black;
   margin: 0;
   padding: 0;
 }
 
+.img-modal {
+  width: 100%;
+  ;
+}
+
+.elemento-modal {
+  display: block;
+}
 
 
 @media (max-width<600px) {
-  #box-resultados{
+  #box-resultados {
     clear: both;
   }
-  
-  #cards{
+
+  #cards {
     gap: 5%;
     display: block;
     justify-content: space-between;
@@ -257,8 +210,8 @@ ul{
     clear: both;
     width: 100vw;
   }
-  
-  #cards ul{
+
+  #cards ul {
     text-decoration: none;
     list-style-type: none;
     gap: 8px;
@@ -271,100 +224,35 @@ ul{
     margin: 0;
     padding: 0;
   }
-  
-  #cards li{
+
+  #cards li {
     list-style-type: none;
-    background-color: #EEE;   
+    background-color: #EEE;
     text-align: center;
     display: block;
     text-align: justify;
     margin: 0;
     padding: 24px;
-      
+
   }
-  
-  #cards li img{
-   width: 114px;
-   height: 114px;
-   object-fit: contain;
-   float: left;
-   
+
+  #cards li img {
+    width: 114px;
+    height: 114px;
+    object-fit: contain;
+    float: left;
+
   }
-  
-  ul{
+
+  ul {
     border-color: black;
     margin: 0;
     padding: 0;
   }
-  
 
 }
 
-#imagemfinal {
-  background-color: #EAECDB !important;
-  margin-left: 39%;
-  padding-left: 10px;
-  padding-right: 1px;
-}
-
-
-
-@media only screen and (max-width: 987px) {
-  .navbar-brand {
-    padding-left: 0px;
-  }
-
-  .main {
-    padding: 50px;
-    flex-direction: column;
-    max-width: 10px;
-    text-align: match-parent;
-    margin: 50px;
-  }
-
-  .container {
-    max-width: fit-content;
-    padding: 10px;
-    flex-direction: column;
-  }
-
-  .first-box {
-    text-align: center;
-    max-width: 200px;
-    max-height: 300px;
-    flex-direction: column;
-    margin: 0px 40px;
-    line-height: 120%;
-    justify-content: space-around;
-  }
-
-  .second-box {
-    text-align: center;
-    max-width: 200px;
-    max-height: 300px;
-    padding: 150px 200px;
-    flex-direction: column;
-    margin: 150px;
-    line-height: 120%;
-    justify-content: space-around;
-  }
-
-  .figura {
-    flex-direction: column-reverse;
-    padding: 0px;
-    margin: auto;
-  }
-
-  .footer {
-    padding: 0px 0px 0px 0px;
-    max-width: fit-content;
-  }
-
-  #imagemfinal {
-    padding: 30px 20px;
-    margin: auto;
-    margin-left: 10px;
-    border-radius: 50px;
-    max-width: 300px;
-  }
+.btn-cor {
+  background-color: #384F08 !important;
+  color: white !important;
 }

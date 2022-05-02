@@ -9,7 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <title>Busca-Eco</title>
@@ -31,17 +33,17 @@
     <form role="search" id="form">
       <input type="text" id="query" name="busca" placeholder="Digite o produto que procura"
         aria-label="Search through site content">
-      <button id="botaobusca" type="button" onclick="esconde()"><svg viewBox="0 0 1024 1024">
+      <button id="botaobusca" type="button"><svg viewBox="0 0 1024 1024">
           <path class="path1"
             d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
           </path>
         </svg></button>
     </form>
     <span id="opcoes">
-      <a href="" class="opcao" value="escova">Escova</a>
-      <a href="" class="opcao" value="sabonete">Sabonete</a>
-      <a href="" class="opcao" value="xampu">Xampu</a>
-      <a href="" class="opcao" value="sabão">Sabão</a>
+      <a href="linkparapaginadeprodutos/esseproduto" class="opcao">Escova</a>
+      <a href="" class="opcao">Sabonete</a>
+      <a href="" class="opcao">Xampu</a>
+      <a href="" class="opcao">Sabão</a>
     </span>
   </div>
   <br>
@@ -54,56 +56,54 @@
 
   </div>
   <br>
-  <div id="pagHome">
-    <main>
-      <div class="container">
-        <div class="first-box">
-
-        <img src="./Imagens/Imagem Home.png" class="figura"></div>
-
-        <div class="second-box">
-          <h3>Como a Busca-Eco funciona?</h3>
-          <p>
-            <span><img src="Imagens/folha.png" alt=""> Pesquise por produtos ou categorias de interesse</span> <br>
-            <span><img src="Imagens/folha.png" alt=""> Visualize o perfil detalhado do produto mais indicado e as
-              características principais</span> <br>
-            <span><img src="Imagens/folha.png" alt=""> Agora você tem todas as informações para escolher o melhor produto
-              para você e acesso ao link do site do fornecedor</span> <br>
-            <span><img src="Imagens/folha.png" alt=""> E ainda conta com nosso cupom de desconto </span> <br>
-          </p>
-        </div>
+  <main>
+    <div class="container">
+      <div class="first-box">
+        <img src="./Imagens/Imagem Home.png">
       </div>
-      <!-- div da imagem e div da explicação "como funciona" --> <br><br><br>
-      <br><br><br>
-      <br><br><br>
-      <br><br><br>
-      <div class="container">
-        <div class="first-box" id="first-box-debaixo">
-          <h3>Quer ser nosso parceiro?</h3>
-          <p>
-            <span><img src="Imagens/folha.png" alt=""> Faça o cadastro da sua empresa, em seguida adicione os produtos e
-              todas as informações que fazem dele sustentável</span> <br>
-            <span><img src="Imagens/folha.png" alt=""> Pronto, sua vitrine está montada e você poderá atualizar as
-              informações ou adicionar produtos quando desejar</span> <br>
-            <span><img src="Imagens/folha.png" alt=""> Agora é só aguardar, o usuário vai até você pelo link direto do
-              produto</span> <br>
-          </p>
-        </div>
-        <div class="second-box">
+      <div class="second-box">
+        <h3>Como a Busca-Eco funciona?</h3>
+        <p>
+          <span><img src="Imagens/folha.png" alt=""> Pesquise por produtos ou categorias de interesse</span> <br>
+          <span><img src="Imagens/folha.png" alt=""> Visualize o perfil detalhado do produto mais indicado e as
+            características principais</span> <br>
+          <span><img src="Imagens/folha.png" alt=""> Agora você tem todas as informações para escolher o melhor produto
+            para você e acesso ao link do site do fornecedor</span> <br>
+          <span><img src="Imagens/folha.png" alt=""> E ainda conta com nosso cupom de desconto </span> <br>
 
-          <img src="./Imagens/imagem2home.png" class="figura"></div>
-
+        </p>
       </div>
-      <br><br><br>
-      <br><br><br>
-      <br><br><br>
-      <br><br><br><br>
+    </div>
+    <!-- div da imagem e div da explicação "como funciona" --> <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <div class="container">
+      <div class="first-box">
+        <h3>Quer ser nosso parceiro?</h3>
+        <p>
+          <span><img src="Imagens/folha.png" alt=""> Faça o cadastro da sua empresa, em seguida adicione os produtos e
+            todas as informações que fazem dele sustentável</span> <br>
+          <span><img src="Imagens/folha.png" alt=""> Pronto, sua vitrine está montada e você poderá atualizar as
+            informações ou adicionar produtos quando desejar</span> <br>
+          <span><img src="Imagens/folha.png" alt=""> Agora é só aguardar, o usuário vai até você pelo link direto do
+            produto</span> <br>
 
-      <br>
-      <!-- div da imagem e div da explicação "quer ser nosso parceiro?"-->
-      <div class="text-center"><button type="button" class="btn btn-success" role="button">Cadastrar produto</button>
+        </p>
       </div>
-  </div>
+      <div class="second-box">
+        <img src="./Imagens/Imagem Home.png">
+      </div>
+    </div>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br><br>
+
+    <br>
+    <!-- div da imagem e div da explicação "quer ser nosso parceiro?"-->
+    <div class="text-center"><button type="button" class="btn btn-success" role="button">Cadastrar produto</button>
+    </div>
     <br>
     <br>
     <br>
@@ -120,29 +120,52 @@
         <label for="busca"></label>
         <div class="produtos-encontrados">
         </div>
-        <script src="./pesquisa/js.js"></script>
       </div>
-
+      
     </div>
+    
+  </div>
+  
+</main>
 
+
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Modal title</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-cor" data-bs-dismiss="modal">Ir para o site</button>
+      </div>
     </div>
+  </div>
+</div>
 
 
-  </main>
+
+<footer>
+  <!--div do logo da busca-eco -->
+  <br>
+  <div container="text-center">
+    <img src="./Imagens/logo-completa.png" alt="Busca-Eco" id="imagemfinal">
+  </div><br>
+  <div class="text-center">@Equipe 54</div><br>
+</footer>
 
 
 
-  <footer>
-    <!--div do logo da busca-eco -->
-    <br>
-    <div container="text-center">
-      <img src="./Imagens/logo-completa.png" alt="Busca-Eco" id="imagemfinal">
-    </div><br>
-    <div class="text-center">@Equipe 54</div><br>
-
-
-  </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./pesquisa/js.js"></script>
 </body>
 
 </html>

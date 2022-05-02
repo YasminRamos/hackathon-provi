@@ -1,16 +1,11 @@
 const btn = document.querySelector('button')
 const divElemento = document.querySelector('div')
 const input = document.querySelector('input')
-
-function esconde(){
-    const pagHome = document.getElementById("pagHome");
-    pagHome.style.display = "none";
-}
-
+const modalTitle = document.querySelector('.modal-title')
+const modalBody = document.querySelector('.modal-body')
 btn.addEventListener('click', (e) => {
     const nome = input.value
     acessaApi(nome)
-    esconde();
 })
 
 async function acessaApi(nome) {
@@ -34,10 +29,9 @@ function trabalhaApi(data, nome) {
 const divResultados = document.querySelector("#cards")
 
 async function criaElemento(produtos) {   
+    
     const ul = document.createElement("ul")    
     const arrayItem = []
-
-
 
     produtos.forEach(produto => {
 
@@ -59,6 +53,7 @@ async function criaElemento(produtos) {
 
   
     divResultados.appendChild(ul)
+
 }
 
 function criaInfo(arrayInfos, li) {
@@ -73,8 +68,45 @@ function criaInfo(arrayInfos, li) {
 
 function criaFoto(url, li) {
     const img = document.createElement('img')
+    img.setAttribute('data-bs-toggle', 'modal')
+    img.setAttribute('data-bs-target', '#exampleModal')
     img.classList.add('card-img')
     img.src = url
     li.appendChild(img)
-    
+    dadosModal(img)
+}
+
+function dadosModal (elemento) {
+    elemento.addEventListener('click', () => {
+        populaModal(elemento.parentNode)
+    })
+}
+
+function populaModal(pai) {
+    modalBody.innerHTML = ''
+    let arrayFilhos = []
+    let filho = pai.childNodes
+    for (let i = 0; i < 6; i++) {
+        arrayFilhos.push(filho[i])
+    }
+
+    const titulo = arrayFilhos[0]
+    modalTitle.textContent = titulo.data
+    arrayFilhos.splice(0, 1)
+
+    arrayFilhos.forEach((filho, i) => {
+        if (filho.tagName == 'IMG') {
+            criaImagemModal(filho)
+            arrayFilhos.splice(0, 1)
+        }
+    })
+    criaInfoModal(filho[5])
+}
+
+
+function criaImagemModal(elemento) {
+    const imgModal = document.createElement('img')
+    imgModal.src = elemento.src
+    imgModal.classList.add('img-modal')
+    modalBody.appendChild(imgModal)
 }
