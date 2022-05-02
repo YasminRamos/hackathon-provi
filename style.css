@@ -118,9 +118,10 @@ form {
 .card-img {
   max-width: 200px;
   display: block;
+  cursor: pointer;
 }
 
-footer{
+footer {
   background-color: #544441 !important;
   width: 100%;
 }
@@ -132,20 +133,20 @@ footer{
   padding-right: 1px;
 }
 
-#box-resultados{
+#box-resultados {
   clear: both;
 }
 
-#cards{
+#cards {
   gap: 5%;
   display: block;
   justify-content: space-between;
   align-items: center;
   clear: both;
-  
+  width: 100vw;
 }
 
-#cards ul{
+#cards ul {
   text-decoration: none;
   list-style-type: none;
   gap: 8px;
@@ -154,43 +155,52 @@ footer{
   border-color: black;
   display: flex;
   white-space: nowrap;
-  justify-content: space-around;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
 
-#cards li{
+#cards li {
   list-style-type: none;
-  background-color: #EEE;   
+  background-color: #EEE;
   text-align: center;
   display: block;
   text-align: justify;
   margin: 0;
   padding: 24px;
-    
+
 }
 
-#cards li img{
- width: 250px;
- height: 250px;
- object-fit: contain;
- 
+#cards li img {
+  width: 114px;
+  height: 114px;
+  object-fit: contain;
+  float: left;
+
 }
 
-ul{
+ul {
   border-color: black;
   margin: 0;
   padding: 0;
 }
 
+.img-modal {
+  width: 100%;
+  ;
+}
+
+.elemento-modal {
+  display: block;
+}
 
 
 @media (max-width<600px) {
-  #box-resultados{
+  #box-resultados {
     clear: both;
   }
-  
-  #cards{
+
+  #cards {
     gap: 5%;
     display: block;
     justify-content: space-between;
@@ -198,8 +208,8 @@ ul{
     clear: both;
     width: 100vw;
   }
-  
-  #cards ul{
+
+  #cards ul {
     text-decoration: none;
     list-style-type: none;
     gap: 8px;
@@ -212,31 +222,35 @@ ul{
     margin: 0;
     padding: 0;
   }
-  
-  #cards li{
+
+  #cards li {
     list-style-type: none;
-    background-color: #EEE;   
+    background-color: #EEE;
     text-align: center;
     display: block;
     text-align: justify;
     margin: 0;
     padding: 24px;
-      
+
   }
-  
-  #cards li img{
-   width: 114px;
-   height: 114px;
-   object-fit: contain;
-   float: left;
-   
+
+  #cards li img {
+    width: 114px;
+    height: 114px;
+    object-fit: contain;
+    float: left;
+
   }
-  
-  ul{
+
+  ul {
     border-color: black;
     margin: 0;
     padding: 0;
   }
-  
+
 }
 
+.btn-cor {
+  background-color: #384F08 !important;
+  color: white !important;
+}
