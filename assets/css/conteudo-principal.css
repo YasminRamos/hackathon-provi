@@ -1,0 +1,163 @@
+main {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao--principal {
+    box-sizing: border-box;
+    height: 40%;
+    margin: 5rem auto 0 auto;
+    width: 100%;
+    max-width: 1028px;
+    display: flex;
+}
+
+.secao--img, .secao--info {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.secao--info {
+    padding: 0 5rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    box-sizing: border-box;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.secao--titulo {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.725rem;
+    height: fit-content;
+}
+
+.secao--lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.secao--lista__sobre span {
+    background-image: url('../img/folha.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.secao--lista__sobre li{
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.secao--lista__parceiros span {
+    background-image: url('../img/folha.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.secao--lista__parceiros li{
+    text-align: right;
+    padding-right: 1.975rem;
+    padding-left: 1.025rem;
+}
+
+.secao--button {
+    margin-top: 5rem;
+    width: fit-content;
+    padding: 1rem;
+    text-transform: uppercase;
+    width: fit-content;
+    background-color: #384F08;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 5rem;
+    background-color: #544441;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #EAECDB;
+}
+
+.logo--rodape {
+    min-width: 250px;
+    width: 20%;
+    background-color: white;
+}
+
+#button--subir {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    opacity: 0;
+    transition: .25s;
+}
+
+#button--subir img {
+    width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        height: auto;
+    }
+
+    .secao--img__sumir {
+        display: none;
+    }
+
+    .secao--principal {
+        box-sizing: border-box;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .secao--principal__mobile {
+        flex-direction: column-reverse;
+        padding-top: 4rem;
+    }
+
+    .secao--img {
+        margin: 4rem 0;
+    }
+    
+    .secao--lista {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .secao--info {
+        padding: 2rem;
+    }
+
+    .secao--lista__parceiros li {
+        padding-left: 0;
+    }
+}

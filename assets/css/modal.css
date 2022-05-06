@@ -1,0 +1,83 @@
+.body-eco {
+    overflow-x: hidden;
+    background-color: rgb(247, 247, 247);
+}
+
+.border-eco {
+    border-color: #A2B38B;
+}
+
+.div-eco {
+    display: flex;
+    align-items: center;
+}
+
+.ul-eco {
+    padding-left: 1.5rem;
+}
+.li-eco {
+    margin-bottom: .5rem;
+    list-style: none;
+    padding-left: .5rem;
+    height: auto;
+    font-size: 1rem;
+}
+
+.span-eco {
+    margin-bottom: .5rem;
+    content: url('../img/folha.png');
+    height: .675rem;
+}
+
+.ul-icons {
+    margin-top: 2.5rem;
+    padding-left: 1.5rem;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.li-icons {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    overflow-x: visible;
+}
+
+.img-icons {
+    width: 3rem;
+}
+
+.span-icons {
+    position: absolute;
+    bottom: 2rem;
+    left: -2rem;
+    font-size: .675rem;
+    padding: .3rem 1rem;
+    z-index: 1000;
+    width: 7rem;
+    background-color: #384F08;
+    color: #EAECDB;
+    opacity: 0;
+}
+
+
+.img-icons:hover + .span-icons {
+    transition: .5s all;
+    opacity: 1;
+    display: block;
+}
+
+@media screen and (min-width: 992px) {
+    .ul-icons {
+        gap: 4rem;
+    }
+
+    .span-icons {
+        font-size: .8rem;
+    }
+}
