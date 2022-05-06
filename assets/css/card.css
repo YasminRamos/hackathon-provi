@@ -1,0 +1,129 @@
+.secao--resultados {
+    height: auto;
+    width: 100%;
+    max-width: 1028px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.titulo-erro {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #384F08;
+    width: 100%;
+    text-align: center;
+}
+.card-eco {
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 26rem;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 5px 7px rgb(0, 0, 0, 0.25);
+}
+
+.card-img-eco {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top-eco {
+    object-fit: contain;
+    width: 80%;
+    height: 80%;
+    transition: .75s all ease;
+    -moz-transition: all .75s ease;
+    -webkit-transition: all .75s ease;
+}
+
+.card-img-top-eco:hover {
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.card-body-eco {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 100%;
+    height: 40%;
+    color: #384F08;
+}
+
+.card-title-eco {
+    width: 100%;
+    height: fit-content;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #384F08;
+    max-height: 1.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-text-eco {
+    box-sizing: border-box;
+    padding-top: .5rem;
+    margin-bottom: .5rem;
+    width: 100%;
+    height: 100%;
+    max-height: 4rem;
+    font-size: .875rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; 
+}
+.button-produto-eco, .button-fechar-eco{
+    box-sizing: border-box;
+    width: fit-content;
+    font-size: .825rem;
+    font-weight: bold;
+    padding: .75rem 1.5rem;
+    color: #EAECDB;
+    background-color: #384F08;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+.button-produto-eco__card {
+    position: absolute;
+    bottom: .5rem;
+}
+
+.button-fechar-eco {
+    color: #EAECDB;
+    background-color: #A2B38B;
+    transition: all .25s ease;
+}
+.button-fechar-eco:hover {
+    background-color: #83926e;    
+
+}
+
+.button-produto-eco:hover {
+    color: #EAECDB;
+}
