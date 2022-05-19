@@ -23,6 +23,105 @@
 </head>
 
 <body>
+  <header class="cabecalho">
+    <a href=""><img src="assets/img/logo-completa.png" class="cabecalho--logo " alt=""></a>
+    <div class="cabecalho--pesquisa">
+        <div class="pesquisa--input">
+            <label for="input-busca" class="input--label">Digite o produto que busca</label>
+            <div class="input">
+                <input type="text" name="input-busca" id="input-busca">
+                <button type="button" class="input--button"></button>   
+            </div>
+        </div>
+        <nav class="pesquisa--links">
+            <ul>
+                <li><button class="link--item">Esponja</button></li>
+                <li><button class="link--item">Sabão</button></li>
+                <li><button class="link--item">Multiuso</button></li>
+                <li><button class="link--item">Lava Roupas</button></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="cabecalho--cupom">
+        <img src="./assets/img/Vector.png" alt="" class="cupom--img">
+        <p class="cupom--texto">Use o cupom BUSCA-ECO nas suas compras e ganhe 5% de desconto em todos os itens. </p>
+    </div>
+</header>
+
+<main>
+    <section class="secao--principal secao--principal__mobile">
+        <div class="secao--img secao--img__mobile">
+            <img src="./assets/img/img-home.png" alt="" class="imagem">
+        </div>
+        <div class="secao--info">
+                <h3 class="secao--titulo">Como a Eco-logico funciona?</h3>
+                <ul class="secao--lista secao--lista__sobre">
+                    <span>
+                        <li class="secao--item">Pesquise por produtos ou categoria de interesse </li>
+                    </span>
+                    <span>    
+                        <li class="secao--item">Visualize o perfil detalhado do produto mais indicado e as caracteristas principais</li>
+                    </span>
+                    <span>
+                        <li class="secao--item">Ou escolha três produtos para comparar os atributos </li>
+                    </span>
+                    <span>
+                        <li class="secao--item">Pronto, agora você tem todas as informações para escolher o melhor produto para você e acesso ao link do site do fornecedor </li>
+                    </span>
+                </ul>
+        </div>
+    </section>
+
+    <section class="secao--principal secao--secundaria__mobile">
+        <div class="secao--info">
+            <h3 class="secao--titulo">Quer ser nosso parceiro?</h3>
+            <ul class="secao--lista secao--lista__parceiros">
+                <span>
+                    <li class="secao--item">Faça o cadastro da sua empresa em seguida adicione os produtos e todas as informações que fazem dele sustentável</li>
+                </span>
+                <span>
+                    <li class="secao--item">Pronto, sua vitrine está montada e você poderá atualizar as informações ou adicionar produtos quando desejar</li>
+                </span>
+                <span>
+                    <li class="secao--item">Agora é só aguardar, o usuário vai até você pelo link direto do produto</li>
+                </span>
+            </ul>
+        </div>
+        <div class="secao--img secao--img__sumir">
+            <img src="./assets/img/img-home2.png" alt="" class="imagem">
+        </div>
+    </section>
+
+    <button type="button" class="secao--button">Entre em contato</button>
+</main>
+
+
+<!-- <section class="secao--resultados container row row-cols-1 row-cols-md-3 d-flex justify-content-center align-items">
+</section> -->
+
+<section class="secao--resultados">
+
+</section>
+
+<a href="#" id="button--subir"><img src="assets/img/button-subir.png" alt=""></a>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content border-eco body-eco">
+        <div class="modal-header border-eco">
+          <h5 class="modal-title fw-bold" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer border-eco">
+          <button type="button" class="button-fechar-eco" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="button-produto-eco">Ir para site</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <img src="./assets/img/logo-completa.png" class="logo--rodape" alt="">
